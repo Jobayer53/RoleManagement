@@ -44,10 +44,11 @@
                         <td>{{ $data->email }}</td>
                         <td>
                             @if (Auth::user()->can('student.edit'))
-
                             <a href="" class="btn btn-primary btn-sm">Edit</a>
                             @endif
+                            @if (Auth::user()->can('student.edit'))
                             <a href="" class="btn btn-danger btn-sm">Delete</a>
+                            @endif
                         </td>
                     </tr>
                     @empty

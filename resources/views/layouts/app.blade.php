@@ -12,6 +12,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+    
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
@@ -35,6 +36,7 @@
                     <ul class="navbar-nav">
                         <li><a href="{{ route('home') }}" class="btn">Home</a></li>
                         <li><a href="{{ route('student.index') }}" class="btn">Student</a></li>
+                        <li><a href="{{ route('role.index') }}" class="btn">Roles & Permissions </a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -81,5 +83,8 @@
             @yield('content')
         </main>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" "></script>
+    @yield('script')
 </body>
 </html>
